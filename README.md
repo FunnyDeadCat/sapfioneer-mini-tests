@@ -10,7 +10,9 @@
 
 ## Run
 * `npx cypress run --browser chrome` to run tests on chrome in headless mode
+
 or
+
 * `npx cypress run --browser chrome --headed` to run tests on chrome in headed mode
 
 ### Reports
