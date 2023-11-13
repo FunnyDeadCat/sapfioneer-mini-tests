@@ -47,7 +47,7 @@ describe('Test suite for SAP Fioneer home page', () => {
   })
 })
 
-describe('Test siute for contact feature', () => {
+describe('Test siute for Contact page', () => {
   it('Verify validation messages in Get in touch page', () => {
 
     const fieldMessage = 'Please complete this required field.'

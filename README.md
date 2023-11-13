@@ -9,7 +9,9 @@
 * `npm install` to install packages from package.json
 
 ## Run
-* `npx cypress run --browser chrome` to run tests on chrome
+* `npx cypress run --browser chrome` to run tests on chrome in headless mode
+or
+* `npx cypress run --browser chrome --headed` to run tests on chrome in headed mode
 
 ### Reports
 you will find reports under "cypress/results" folder
