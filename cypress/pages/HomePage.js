@@ -1,32 +1,30 @@
 import "cypress-real-events/support";
-import 'cypress-iframe';
-import ContactPage from '../pages/ContactPage';
+import ContactPage from './ContactPage';
 
 class HomePage {
 
+    // Selectors
     static header = 'div.col-inner h3:first';
-    static bookmarksSelector = 'a.nav-top-link';
+    static bookmarks = 'a.nav-top-link';
     static getInTouchButton = 'div.header-button a:contains("Get in touch"):first';
-    static financeESGBookmarkSelector = 'a.nav-top-link:contains("Finance & ESG")';
-    static financialControlSelector = 'span.ux-menu-link__text:contains("Financial Control")';
-
+    static financeESGBookmark = 'a.nav-top-link:contains("Finance & ESG")';
+    static financialControl = 'span.ux-menu-link__text:contains("Financial Control")';
 
     visit() {
         cy.visit('');
     }
   
-        
     getHeader() {
         return cy.get(HomePage.header);
     }
 
     getBoomarks() {
-        return cy.get(HomePage.bookmarksSelector);
+        return cy.get(HomePage.bookmarks);
     }
 
     openFinancialControl() {
-        cy.get(HomePage.financeESGBookmarkSelector).realHover('mouse');
-        cy.get(HomePage.financialControlSelector).click()      
+        cy.get(HomePage.financeESGBookmark).realHover('mouse');
+        cy.get(HomePage.financialControl).click()      
     }
   
     openGetInTouch() {

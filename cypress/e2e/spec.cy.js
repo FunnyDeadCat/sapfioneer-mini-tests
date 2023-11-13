@@ -11,8 +11,7 @@ beforeEach(() => {
 })
 
 describe('Test suite for SAP Fioneer home page', () => {
-
-  it('Verify bookmarks', () => {
+  it('Verify all bookmarks on home page', () => {
 
     const expectedBookmarkText = [
       'Banking',

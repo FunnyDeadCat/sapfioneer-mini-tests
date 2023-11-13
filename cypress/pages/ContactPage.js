@@ -2,6 +2,7 @@ import HomePage from './HomePage'
 
 class ContactPage extends HomePage {
   
+  // Selectors
   static submitButton = "input[value='Submit']"
   static errorMessage =  '.hs-error-msg'
   static firstNameMessage = 'div.hs-firstname'
@@ -12,8 +13,6 @@ class ContactPage extends HomePage {
   static helpMessage = 'div.hs_how_can_we_help_you_'
   static legalMessage = 'div[class^="hs_LEGAL_CONSENT"]'
   static allFields = 'div.hs_error_rollup'
-
-
 
   submit() {
     getIframeBody().find(ContactPage.submitButton).click()
@@ -65,4 +64,5 @@ const getIframeBody = () => {
   .then(cy.wrap)
 
 }
+
 export default ContactPage;
